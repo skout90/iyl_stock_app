@@ -1,0 +1,73 @@
+{
+  "project_info": {
+    "project_number": "421011063140",
+    "firebase_url": "https://iylm-14af6.firebaseio.com",
+    "project_id": "iylm-14af6",
+    "storage_bucket": "iylm-14af6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:421011063140:android:080420c3aaa78c5c",
+        "android_client_info": {
+          "package_name": "com.myheart.iylm"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "421011063140-38ktqku8g6lfuoasf1f053k7jf8ch6v2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD90a5MK9yBtlRwryhRVWbCv3EsH2orlTc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:421011063140:android:f278fb3eab75dcc0",
+        "android_client_info": {
+          "package_name": "com.myheart.iyls"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "421011063140-38ktqku8g6lfuoasf1f053k7jf8ch6v2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD90a5MK9yBtlRwryhRVWbCv3EsH2orlTc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

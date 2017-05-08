@@ -1,0 +1,27 @@
+<ion-header>
+    <ion-navbar>
+        <button menuToggle ion-button icon-only>
+            <ion-icon name="menu"></ion-icon>
+        </button>
+        <ion-title>IYLS 공시 현황</ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+      <ion-card>
+          <ion-item *ngIf="schedule">
+              <ion-icon name="ios-color-filter" item-left large></ion-icon>
+              <h2>{{schedule.title}}</h2>
+              <p>{{schedule.regDt | date:'MM-dd HH:mm'}}</p>
+          </ion-item>
+          <div #scheduleContents>
+          </div>
+          
+          <ion-item>
+              <span primary clear item-right>
+                  <ion-icon balanced></ion-icon>
+<!--                   {{schedule.price ? (pizza.price | currency:'EUR') : 'kostenlos'}} -->
+              </span>
+          </ion-item>
+      </ion-card>
+</ion-content>
