@@ -34,7 +34,6 @@ export class HomePage implements OnInit {
                 return this.push.saveToken(t);
             }).then((t: PushToken) => {
                 console.log('Token saved:' + t.token);
-                alert('Token saved:' + t.token);
                 this.deviceToken = t.token;
                 this.homeService.insertDeviceToken(t.token).subscribe();
             });
