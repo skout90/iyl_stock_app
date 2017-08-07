@@ -1,26 +1,25 @@
 <ion-header>
     <ion-navbar>
-        <button menuToggle ion-button icon-only>
-            <ion-icon name="menu"></ion-icon>
-        </button>
-        <ion-title>IYLS 공시 현황</ion-title>
+      <ion-title>
+        <ion-icon color="primary" name="stats"></ion-icon>&nbsp;
+        IYLS 공시 현황 ver 1.1
+      </ion-title>
     </ion-navbar>
 </ion-header>
 
 <ion-content padding>
       <ion-card>
           <ion-item *ngIf="schedule">
-              <ion-icon name="ios-color-filter" item-left large></ion-icon>
+              <ion-icon name="logo-dribbble" color="bright" item-left large></ion-icon>
               <h2>{{schedule.title}}</h2>
               <p>{{schedule.regDt | date:'MM-dd HH:mm'}}</p>
           </ion-item>
-          <div #scheduleContents>
+          <div #scheduleContents class="con_detail">
           </div>
-          
+
           <ion-item>
               <span primary clear item-right>
                   <ion-icon balanced></ion-icon>
-<!--                   {{schedule.price ? (pizza.price | currency:'EUR') : 'kostenlos'}} -->
               </span>
           </ion-item>
       </ion-card>

@@ -13,50 +13,54 @@ import { ScheduleService } from '../providers';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
+import { IonicStorageModule } from '@ionic/storage';
+
 import { CloudSettings, CloudModule } from '@ionic/cloud-angular';
 
 const cloudSettings: CloudSettings = {
-    'core': {
-        'app_id': '8b35e122'
-    },
-    'push': {
-        'sender_id': '421011063140',
-        'pluginConfig': {
-            'ios': {
-                'badge': true,
-                'sound': true
-            },
-            'android': {
-                'iconColor': '#343434'
-            }
-        }
+  'core': {
+    'app_id': '8b35e122'
+  },
+  'push': {
+    'sender_id': '421011063140',
+    'pluginConfig': {
+      'ios': {
+        'badge': true,
+        'sound': true
+      },
+      'android': {
+        'iconColor': '#343434'
+      }
     }
+  }
 };
 
 @NgModule({
-    declarations: [
-        MyApp,
-        HomePage,
-        SchedulePage
-    ],
-    imports: [
-        IonicModule.forRoot(MyApp),
-        CloudModule.forRoot(cloudSettings),
-        BrowserModule,
-        HttpModule
-    ],
-    bootstrap: [IonicApp],
-    entryComponents: [
-        MyApp,
-        HomePage,
-        SchedulePage
-    ],
-    providers: [
-        HomeService,
-        ScheduleService,
-        StatusBar,
-        SplashScreen,
-        { provide: ErrorHandler, useClass: IonicErrorHandler }
-    ]
+  declarations: [
+    MyApp,
+    HomePage,
+    SchedulePage
+  ],
+  imports: [
+    IonicModule.forRoot(MyApp),
+    CloudModule.forRoot(cloudSettings),
+    BrowserModule,
+    HttpModule,
+    IonicStorageModule.forRoot()
+  ],
+  bootstrap: [IonicApp],
+  entryComponents: [
+    MyApp,
+    HomePage,
+    SchedulePage
+  ],
+  providers: [
+    HomeService,
+    ScheduleService,
+    StatusBar,
+    SplashScreen,
+    {provide: ErrorHandler, useClass: IonicErrorHandler}
+  ]
 })
-export class AppModule { }
+export class AppModule {
+}

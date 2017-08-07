@@ -1,3 +1,14 @@
 page-home {
-
+    ion-navbar.toolbar {
+        padding-top: 18px;
+    }
+    .push_box {
+        float: right;
+        text-align: right;
+        height: 40px;
+        ion-toggle {
+            display: inline-block;
+            padding-top: 8px;
+        }
+    }
 }

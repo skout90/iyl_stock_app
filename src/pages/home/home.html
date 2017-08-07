@@ -1,24 +1,25 @@
 <ion-header>
     <ion-navbar>
-        <button menuToggle ion-button icon-only>
-            <ion-icon name="menu"></ion-icon>
-        </button>
-        <ion-title>IYLS 공시 현황 ver 1.0</ion-title>
+        <ion-title>
+            <ion-icon color="primary" name="stats"></ion-icon>&nbsp;
+            IYLS 공시 현황 ver 1.11
+            <div class="push_box">
+                <ion-toggle checked="isPush" [(ngModel)]="isPush" (ionChange)="onChange()">
+                </ion-toggle>
+            </div>
+        </ion-title>
     </ion-navbar>
 </ion-header>
 
 <ion-content padding>
     <ion-list>
         <ion-item-group [hidden]="loading">
-
             <a ion-item (click)="openSchedule(schedule.seqno)" *ngFor="let schedule of schedules; let i = index">
                 <span item-left text-left>{{i+1}}</span>
                 <h2>{{schedule.title}}</h2>
                 <p>{{schedule.regDt | date:'MM-dd HH:mm'}}</p>
             </a>
+            <p class="copyright">Made By 주관돈, 남준호</p>
         </ion-item-group>
     </ion-list>
-    <p>
-        Made by 주관돈, 남준호
-    </p>
 </ion-content>
